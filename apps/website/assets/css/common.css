@@ -1,0 +1,124 @@
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(calc(100vh - 3.5em));
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-y: repeat(calc(100vh - 3.5em));
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 34, 1);
+    background: rgba(245, 245, 255, 1);
+}
+
+body > header,
+body > nav > ol:first-of-type > li {
+    border-bottom: 0.5em solid rgba(250, 166, 26, 1);
+}
+
+body > nav > ol:first-of-type > li {
+    border-bottom-width: 0.063em;
+}
+
+body > header {
+    box-sizing: content-box;
+    border-bottom-width: 0.5em;
+    height: 5em;
+}
+
+body > header > h1 {
+    color: rgba(250, 166, 26, 1);
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 0.75em;
+}
+
+body > nav > a[tabindex] {
+    border-radius: 50%;
+    padding: 0.1%;
+    font-size: 0.75em;
+    margin-left: 1.5%;
+    margin-top: 1.4em;
+}
+
+body > nav > a[tabindex="1"] {
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(250, 166, 26, 1);
+}
+
+body > nav > a[tabindex="1"]:hover {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 34, 1);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body > nav > a[tabindex="-1"] {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 34, 1);
+    border: 1px solid rgba(0, 0, 34, 1);
+}
+
+body > nav > a[tabindex="-1"]:hover {
+    border: 1px solid rgba(250, 166, 26, 1);
+    background-color: rgba(0, 0, 34, 1);
+    color: rgba(250, 166, 26, 1);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body > header > h1 > a {
+    font-size: 1.5em;
+}
+
+body > header > h1 > a:hover  {
+    border-bottom: 2px dashed rgba(250, 166, 26, 1);
+    padding: 0.05em;
+}
+
+body > header,
+body > nav > a,
+body > nav > ol:first-of-type {
+    background: rgba(0, 0, 34, 1);
+}
+
+body > nav > ol:first-of-type {
+    margin-top: 2em;
+}
+
+body > header > ol > li > a,
+body > nav > a {
+    color: rgba(245, 245, 255, 0.7);
+}
+
+body > header > ol > li > a:not(:focus) ~ a {
+    color: transparent;
+}
+
+body > header > ol > li > a + ol,
+body > header > ol > li > a ~ p {
+    background: rgba(255, 255, 181, 1);
+}
+
+body > header > ol > li > ol > li > a {
+    display: block;
+    height: 100%;
+    padding: 0 0.5em;
+}
+
+body > header > ol > li > a:not(:focus) + ol:not(:empty) ~ a::after {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+body > nav {
+    margin-top: 3.063em;
+}
+
+body > nav > ol:first-of-type a {
+    color: rgba(250, 166, 26, 1);
+    font-weight: bold;
+    text-align: center;
+}
+
+body > nav > ol:first-of-type a.current {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 34, 1);
+}

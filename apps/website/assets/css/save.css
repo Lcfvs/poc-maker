@@ -1,0 +1,274 @@
+/* ========================================================================================================
+# code from Lcf.vs, initiate the style
+==========================================================================================================*/
+
+body {
+    /*fatCat*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 34, 1);
+    background: rgba(245, 245, 255, 1);
+}
+
+body > header {
+    box-sizing: content-box;
+    /*fatCat*/
+    min-height: 5em;
+}
+
+body > header,
+body > nav > a,
+body > nav > ol:first-of-type {
+    background: rgba(0, 0, 34, 1);
+}
+
+body > header > ol > li > a,
+body > nav > a {
+    color: rgba(245, 245, 255, 0.7);
+}
+
+body > header > ol > li > a:not(:focus) ~ a {
+    color: transparent;
+}
+
+body > header > ol > li > a + ol,
+body > header > ol > li > a ~ p {
+    background: rgba(255, 255, 181, 1);
+}
+
+body > header > ol > li > ol > li > a {
+    display: block;
+    height: 100%;
+    padding: 0 0.5em;
+}
+
+body > header > ol > li > a:not(:focus) + ol:not(:empty) ~ a::after {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+body > header,
+body > nav > ol:first-of-type > li {
+    border-bottom: 0.063em solid rgba(255, 255, 255, 0.3);
+}
+
+body > nav {
+    margin-top: 3.063em;
+}
+
+body > nav > ol:first-of-type a {
+    color: rgba(204, 204, 255, 1);
+}
+
+body > nav > ol:first-of-type a.current {
+    color: rgba(91, 192, 190, 1);
+}
+
+main {
+    top: 5.625em;
+}
+
+main > h1 {
+    font-size: 2em;
+}
+
+main > h1,
+main > p {
+    text-align: center;
+}
+
+/* ========================================================================================================
+# code from fatCat, initiate the global style for header and footer
+==========================================================================================================*/
+
+/*============================================ Header ==================================================*/
+
+body > header {
+    border-bottom: 0.625em solid rgba(250, 166, 26, 1);
+}
+
+body > header > h1,
+body > header > nav {
+    color: rgba(250, 166, 26, 1);
+}
+
+body > header > h1 {
+    margin-top: 1.2em;
+}
+
+body > header > h1 > a {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+body > header > nav {
+    margin-left: 60%;
+    margin-top: 2.3em;
+}
+
+body > header > nav > ol > li {
+    display: inline;
+    margin-left: 5%;
+}
+
+body > header > h1 > a:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 0.063em dashed rgba(255, 255, 255, 1);
+    padding: 0.3em;
+    margin-left: -1%;
+}
+
+body > header > nav > ol > li > a:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 0.063em dashed rgba(255, 255, 255, 1);
+    padding: 0.5em;
+    margin-left: -1%;
+}
+
+body > header > nav > a[role='button'] {
+    display: none;
+}
+
+/*============================================ Footer ==================================================*/
+
+body > footer {
+    background-color: rgba(7, 17, 54,1);
+    height: 10em;
+    width: 100%;
+}
+
+/* ========================================================================================================
+# code from fatCat, style for home page
+==========================================================================================================*/
+
+/*============================== First section home page presentation ========================*/
+
+@media only screen and (min-width: 50em) {
+    body {
+        margin-left: 0;
+        margin-top: 2.5em;
+    }
+}
+
+main.home {
+    height: auto;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+main.home > header {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+main.home > header img {
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+main.home > header h1,
+main.home > header h2,
+main.home > header p {
+    margin-top: -5em;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+main.home > header h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+main.home > header h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+main.home > header {
+  background-color: rgba(92, 45, 145, 1);
+}
+
+main.home > header > div {
+  width: 50%;
+  height: 20em;
+  margin-top: -25em;
+  margin-left: 30%;
+  position: absolute;
+  z-index: 0;
+}
+
+main.home > header img {
+  position: relative;
+  opacity: 0.5;
+  width: 100%;
+}
+
+/*============================== Second section Anticore features ==============================*/
+
+main.home > section {
+  width: 80%;
+}
+
+main.home > section {
+  margin-top: 10em;
+}
+
+main.home > section > figure {
+  margin-bottom: 12.5em;
+  padding: 5em;
+}
+
+main.home > section > figure > span {
+  background-color: rgba(250, 166, 26, 1);
+  border: 0.063em solid rgba(250, 166, 26, 1);
+  padding: 5em;
+  border-radius: 50%;
+}
+
+main.home > section > figure > span:hover {
+  background-color: rgba(7, 17, 54,1);
+  border: 0.125em dashed rgba(250, 166, 26, 1);
+  transition: border 1s, background-color 1s;
+}
+
+main.home > section > figure > span:hover ~ ul > li > h3 {
+  text-decoration: underline;
+  text-decoration-style:dashed;
+  text-decoration-color: rgba(250, 166, 26, 1);
+}
+
+main.home > section > figure:nth-child(odd) > span {
+  margin-top: -8em;
+  position: absolute;
+  right: 0;
+}
+
+main.home > section > figure:nth-child(even) > span {
+  margin-top: -8em;
+  position: absolute;
+  left: 8%;
+}
+
+main.home > section > figure:nth-child(odd) > ul {
+  margin-top: -2.5em;
+  position: absolute;
+  left: 17%;
+}
+
+main.home > section > figure:nth-child(even) > ul {
+  margin-top: -2.5em;
+  position: absolute;
+  right: 12%;
+}
+
+main.home > section > figure > ul > li > h3{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+}
+
+main.home > section > figure > ul > li  {
+  margin-bottom: 1em;
+}

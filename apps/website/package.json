@@ -1,0 +1,23 @@
+{
+  "name": "poc-maker",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node_modules/.bin/parcel modules/** --out-dir=./pre-dist",
+    "build": "node_modules/.bin/parcel build modules/** --out-dir=./pre-dist --public-url=./dist --experimental-scope-hoisting",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lcf.vs <michael.rouges@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@lcf.vs/css-ui": "2.4.3",
+    "content-handler": "^1.1.4",
+    "content-handler-express": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-pre-dist": "^1.0.4"
+  }
+}
